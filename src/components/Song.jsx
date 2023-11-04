@@ -5,8 +5,8 @@ const API = import.meta.env.VITE_REACT_APP_API_URL;
 
 function Song({song}){
     return (
-        <tr>
-          <td>
+        <tr className="table table-striped table-bordered">
+          <td className="active">
             <h3>{song.name}</h3>
             {song.time ? (<span><h5>{song.time}</h5></span> ):(<span>&nbsp; &nbsp; &nbsp;</span>)}
           </td>

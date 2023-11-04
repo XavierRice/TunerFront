@@ -32,7 +32,7 @@ function Songs() {
   return (
     <div className="Songs">
       <section>
-        <table>
+        <table className="table-stripe table-hover">
           <thead>
             <tr>
               {/* <h4>Welcome to the song list</h4> */}
