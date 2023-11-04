@@ -9,7 +9,7 @@ import Index from "./pages/Index.jsx";
 // COMPONENTS
 import Song from "./components/Song.jsx";
 import SongDetails from "./components/SongDetails.jsx";
-
+import EditSong from "./components/EditSong.jsx";
 //STATEs
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/songs" element={<Index />} />
           <Route path="/songs/:id" element={<SongDetails />} />
+          <Route path="/songs/:id/edit" element={<EditSong />} />
           <Route path="*" element={<FourOFour />} />
       </Routes>
         </main>
