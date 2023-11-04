@@ -7,11 +7,10 @@ import Home from "./pages/Home.jsx";
 import Index from "./pages/Index.jsx";
 
 // COMPONENTS
+import Song from "./components/Song.jsx";
+import SongDetails from "./components/SongDetails.jsx";
 
-
-
-//STATES
-
+//STATEs
 
 function App() {
 
@@ -21,6 +20,7 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/songs" element={<Index />} />
+          <Route path="/songs/:id" element={<SongDetails />} />
           <Route path="*" element={<FourOFour />} />
       </Routes>
         </main>
