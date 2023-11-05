@@ -29,16 +29,20 @@ function SongDetails() {
 
 
     const handleDelete = () => {
+        const confirmed = window.confirm("Are you sure you wanna drop this jam?")
+    if(confirmed){
+
         try {
             fetch(`${API}/songs/${id}`, { method: 'DELETE' })
-                .then(() => {
-                    navigate('/songs')
-                })
+            .then(() => {
+                navigate('/songs')
+            })
         } catch (error) {
             throw error
         }
     }
-
+}
+    
     return (
 
         <div key={song.id} className="container song">
