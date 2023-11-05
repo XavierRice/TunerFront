@@ -10,7 +10,7 @@ import Index from "./pages/Index.jsx";
 import SongForm from "./components/SongForm.jsx";
 import SongDetails from "./components/SongDetails.jsx";
 import EditSong from "./components/EditSong.jsx";
-
+import NavBar from "./components/NavBar.jsx";
 //STATEs
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
         <main>
+          <NavBar/>
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/songs" element={<Index />} />

@@ -1,0 +1,76 @@
+.home {
+    position: relative;
+    color: red;
+  }
+  .navhome {
+    width: 118px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .navhome-wrapper {
+    flex: 1;
+    align-items: center;
+    padding: 0 var(--padding-base);
+  }
+  .frame-parent,
+  .navbar,
+  .navhome-wrapper,
+  .navnew {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar {
+    flex: 1;
+    align-items: center;
+    padding: 0 var(--padding-base);
+    color: var(--color-slateblue);
+  }
+  .frame-parent,
+  .navnew {
+    width: 151px;
+    align-items: flex-start;
+  }
+  .frame-parent {
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 1512px;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-21xl);
+    text-align: left;
+    font-size: var(--font-size-29xl);
+    color: var(--color-red);
+    font-family: var(--font-lalezar);
+  }
+  @media screen and (max-width: 1200px) {
+    .frame-parent {
+      flex-direction: row;
+      gap: var(--gap-21xl);
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 960px) {
+    .frame-parent {
+      flex-direction: row;
+      gap: var(--gap-21xl);
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .navbar,
+    .navhome-wrapper {
+      flex: unset;
+      align-self: stretch;
+    }
+    .frame-parent {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
